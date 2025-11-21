@@ -1,0 +1,98 @@
+<h2 class="investment-title">Find My Investment</h2>
+
+<div class="form-container">
+    <input type="number" [(ngModel)]="investmentId" placeholder="Enter Investment ID"/>
+    <button (click)="findInvestment()">Search</button>
+</div>
+
+<div class="investment-container">
+    <h2>My Investments</h2>
+
+    @if(investment){
+        <div class="investment-header">
+            <div>Name</div>
+            <div>Type</div>
+            <div>Amount</div>
+            <div>Purchase Date</div>
+            <div>Current Value</div>
+            <div>Actions</div>
+        </div>
+
+        <div class="investment-row">
+            <div>{{ investment.name }}</div>
+            <div>{{ investment.type }}</div>
+            <div>{{ investment.amount | currency:'INR' }}</div>
+            <div>{{ investment.purchaseDate }}</div>
+            <div>{{ investment.currentValue | currency:'INR' }}</div>
+
+            <div>
+                <button (click)="editInvestment()" class="update-btn">Update</button>
+                <button (click)="deleteInvestment()" class="delete-btn">Delete</button>
+            </div>
+        </div>
+    }
+
+    @else {
+        <div>
+            <p>{{ message }}</p>
+        </div>
+    }
+</div>
+
+<!-- FORM TO UPDATE -->
+<div *ngIf="isEditMode" class="update-container">
+    <h3>Edit Investment Values</h3>
+
+    <label>Amount:</label>
+    <input type="number" [(ngModel)]="editableInvestment.amount"/>
+
+    <label>Current Value:</label>
+    <input type="number" [(ngModel)]="editableInvestment.currentValue"/>
+    <button (click)="saveUpdate()">Save</button>
+    <button (click)="cancelUpdate()" class="cancel-btn">Cancel</button>
+</div>
+
+
+
+
+
+
+
+<!-- <div class="form-container">
+    <span>Find My Investment</span><br>
+    <input type="number" [(ngModel)]= "investmentId"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button (click)="findInvestment()">Search</button>
+</div>
+
+<div class="investment-container">
+    <h2>My Investments</h2>
+    @if(investment){
+        <div class="investment-header">
+            <div>Name</div>
+            <div>Type</div>
+            <div>Amount</div>
+            <div>Purchase Date</div>
+            <div>Current Value</div>
+        </div>
+        <div class="investment-row">
+            <div>{{ investment.name }}</div>
+            <div>{{ investment.type }}</div>
+            <div>{{ investment.amount | currency:'INR' }}</div>
+            <div>{{ investment.purchaseDate }}</div>
+            <div>{{ investment.currentValue | currency:'INR' }}</div>
+        </div>       
+        
+    }
+    @else {
+    <div>
+        <p>{{message}}</p>
+    </div>
+    }
+</div>
+
+<div *ngIf="selectedInvestment">
+    <h3>Selected Investment Details</h3>
+    <p>Name: {{selectedInvestment.name}}</p>
+    <p>Amount: {{selectedInvestment.amount}}</p>
+    <p>Type: {{selectedInvestment.type}}</p>
+</div> -->

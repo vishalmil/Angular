@@ -1,0 +1,49 @@
+<h2 class="investment-title">Investment Management Dashboard</h2>
+
+    
+    <div class="grid-container">
+    <div (click)="selectInvestment(inv)" class="grid-item" *ngFor="let inv of allMyInvestments">
+    <strong>{{ inv.name }}</strong>
+    </div>
+
+    </div>
+    <div class="investment-container">
+    <div class="investment-row">
+        <div>{{ selectedInvestment.name }}</div>
+        <div>{{ selectedInvestment.type }}</div>
+        <div>{{ selectedInvestment.amount | currency:'INR' }}</div>
+        <div>{{ selectedInvestment.purchaseDate }}</div>
+        <div>{{ selectedInvestment.currentValue | currency:'INR' }}</div>
+    </div>
+    </div>
+<!-- <app-find-my-investment [selectedInvestment]="selectedInvestment"></app-find-my-investment> -->
+
+
+
+
+<!-- <div class="investment-container">
+    <h2>My Investments</h2>
+    @if(allMyInvestments.length > 0){
+        <div class="investment-header">
+            <div>Name</div>
+            <div>Type</div>
+            <div>Amount</div>
+            <div>Purchase Date</div>
+            <div>Current Value</div>
+        </div>
+        @for(investment of allMyInvestments; track investment.id){
+            <div class="investment-row">
+                <div>{{ investment.name }}</div>
+                <div>{{ investment.type }}</div>
+                <div>{{ investment.amount | currency:'INR' }}</div>
+                <div>{{ investment.purchaseDate }}</div>
+                <div>{{ investment.currentValue | currency:'INR' }}</div>
+            </div>
+        }
+      }@else{
+        <div>
+            <p>{{message}}</p>
+          </div>
+        
+    }
+</div> -->

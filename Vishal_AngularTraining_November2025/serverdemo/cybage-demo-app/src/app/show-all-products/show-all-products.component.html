@@ -1,0 +1,26 @@
+<p>show-all-products works!</p>
+<br>
+@if(products.length > 0) {
+    <div style="display: flex; flex-direction: column; width: 450px; margin: 20px;" >
+  
+      <div style="display: flex; font-weight: bold; background: #f0f0f0; padding: 8px;">
+        <div style="flex: 1;">ID</div>
+        <div style="flex: 2;">Name</div>
+        <div style="flex: 1;">Price</div>
+      </div>
+    
+      <div *ngFor="let product of products" style="display: flex; padding: 8px; border-bottom: 1px solid #ccc;">
+        <div style="flex: 1;">{{product.id}}</div>
+        <div style="flex: 2;">{{product.name | uppercase }}</div>
+        <div style="flex: 1;">{{product.price | currency: 'INR' }}</div>
+      </div>
+    </div>
+  }@else{
+    <div>
+      <p>
+        Test
+      </p>
+    </div>
+  }
+<br>
+<input type="button" value="Fetch All Product" (click)="fetchAllProducts();">

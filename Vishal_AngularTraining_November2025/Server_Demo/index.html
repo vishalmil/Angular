@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch All Products</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#button").click(function() {
+                var url = "http://localhost:3000/products";
+                $.get(url, function(products) {
+                    var output = "<H2>Product List: <H2><ul>";
+                    for (var i=0; i < products.length; i++){
+                        output += "<li>" + products[i].name + " - $" + products[i].price  + "</li>";
+                    }
+                    output += "</ul>";
+                    $("body").append(output);
+                });
+            });
+
+            $("#btn1").click(function() {
+                var url = "http://localhost:3000/users";
+                $.get(url, function(users) {
+                    var output = "<H2>Users List: <H2><ul>";
+                    for (var i = 0; i < users.length; i++){
+                        output += "<li>" + users[i].name + " - $" + users[i].email  + "</li>";
+                    }
+                    output += "</ul>";
+                    $("body").append(output);
+                });
+            });
+        })
+    </script>
+</head>
+<body>
+    <h1>Welcome to My web Page</h1>
+    <button id="button">Get All Products</button>
+
+    <button id="btn1">Get All Users</button>
+</html>

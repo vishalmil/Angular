@@ -1,0 +1,91 @@
+.main-container {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for the investment list */
+.investment-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .investment-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Header row */
+  .investment-header, .investment-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Header specific styling */
+  .investment-header {
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /* Rows hover effect */
+  .investment-row:hover {
+    background-color: #e2e6ea;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Columns styling */
+  .investment-header div,
+  .investment-row div {
+    flex: 1;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  /* Last row bottom border removal */
+  .investment-row:last-child {
+    border-bottom: none;
+  }
+  
+  /* Message for empty list */
+  .investment-container p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    padding: 20px;
+  }
+  
+  .grid-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  .grid-item{
+    background-color: antiquewhite;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  .investment-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    letter-spacing: 1px;
+  }
+  

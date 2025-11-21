@@ -1,0 +1,217 @@
+/* Container for the form */
+.form-container {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading for the form */
+  .form-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Individual form field container */
+  .form-container div {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Form label */
+  .form-container label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Form input and select styling */
+  .form-container input,
+  .form-container select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-left: 300px;
+  }
+  
+  /* Input fields on focus */
+  .form-container input:focus,
+  .form-container select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Submit button styling */
+  .form-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: #ff0000;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+
+
+  /* Container for the investment list */
+.investment-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .investment-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Header row */
+  .investment-header, .investment-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Header specific styling */
+  .investment-header {
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /* Rows hover effect */
+  .investment-row:hover {
+    background-color: #e2e6ea;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Columns styling */
+  .investment-header div,
+  .investment-row div {
+    flex: 1;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  /* Last row bottom border removal */
+  .investment-row:last-child {
+    border-bottom: none;
+  }
+  
+  /* Message for empty list */
+  .investment-container p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    padding: 20px;
+  }
+  button {
+    background-color: #007bff;   /* Bright blue */
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0069d9;
+}
+.update-btn {
+  background-color: #ffc107;  /* Amber */
+  color: #000;
+  margin-right: 10px;
+}
+
+.update-btn:hover {
+  background-color: #e0a800;
+}
+.delete-btn {
+  background-color: #dc3545;  /* Red */
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+.cancel-btn {
+  background-color: #6c757d; /* Grey */
+  color: white;
+  margin-left: 10px;
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+.update-container {
+  width: 350px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f8f9fa;          /* Light grey background */
+  border-radius: 10px;          /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Soft shadow */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;                    /* Space between fields */
+}
+
+.update-container h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+.update-container label {
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 3px;
+}
+
+.update-container input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.investment-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,9 @@
+<h2>My Investments</h2>
+<table style="border-collapse: collapse;">
+    <tr *ngFor="let inv of allMyInvestments">
+      <td *ngFor="let name of inv.name" style="padding: 8px;">
+        {{ name }}
+      </td>
+    </tr>
+  </table>
+  
