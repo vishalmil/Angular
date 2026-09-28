@@ -1,4 +1,42 @@
 {
+  "users": [
+    {
+      "id": "1",
+      "name": "Test1",
+      "email": "test1@gmail.com",
+      "gender": "male",
+      "phone": "9876543210",
+      "password": "Test@123",
+      "role": "user"
+    },
+    {
+      "id": "2",
+      "name": "Test2",
+      "email": "test2@gmail.com",
+      "gender": "female",
+      "phone": "9876543211",
+      "password": "Test@123",
+      "role": "user"
+    },
+    {
+      "id": "3",
+      "name": "Test3",
+      "email": "test3@gmail.com",
+      "gender": "male",
+      "phone": "9876543212",
+      "password": "Test@123",
+      "role": "user"
+    },
+    {
+      "id": "4",
+      "name": "Test4",
+      "email": "test@gmail.com",
+      "gender": "female",
+      "phone": "343",
+      "password": "Test@123",
+      "role": "user"
+    }
+  ],
   "investments": [
     {
       "id": "2",
@@ -136,5 +174,6 @@
       "purchaseDate": "2024-03-10",
       "currentValue": 41000
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
