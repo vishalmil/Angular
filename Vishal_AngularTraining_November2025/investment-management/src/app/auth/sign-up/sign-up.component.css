@@ -1,0 +1,74 @@
+/* Container for the form */
+.form-container {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading for the form */
+  .form-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Individual form field container */
+  .form-container div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Form label */
+  .form-container label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Form input and select styling */
+  .form-container input,
+  .form-container select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Input fields on focus */
+  .form-container input:focus,
+  .form-container select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Submit button styling */
+  .form-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: #ff0000;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  

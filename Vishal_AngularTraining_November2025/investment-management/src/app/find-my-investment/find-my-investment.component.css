@@ -169,7 +169,6 @@ button:hover {
 .cancel-btn {
   background-color: #6c757d; /* Grey */
   color: white;
-  margin-left: 10px;
 }
 
 .cancel-btn:hover {
